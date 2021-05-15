@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(0.30turn, #eff1f8, #c4cee0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    margin: 120px auto;
+    background: white;
+    width: 35%;
+    height: 520px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .container {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 650px) {
+    .container {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 500px) {
+    .container {
+        width: 65%;
+    }
+}
+.container h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+.answer {
+    padding: 6px 30px;
+    margin-bottom: 10px;
+}
+.answer:hover {
+    background: #c4cee0;
+}
+.container button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #833ba2;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+}
+.container button:focus {
+    outline: none;
+}
+.container button:hover {
+    background: #a250c5;
+}
+#score {
+    display: none;
+    margin: 20px auto;
+    font-size: 20px;
+}

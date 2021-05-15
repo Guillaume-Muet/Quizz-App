@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Quiz App </title>
+</head>
+<body>
+    <div class="container">
+
+        <h1> Please, choose category & difficulty </h1>
+
+        <div class="content">
+            <div class="category">
+                <div class="answer">
+                    <input type="radio" id="category" name="category">
+                    <label for="A1">Linux</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="category" name="category">
+                    <label for="A2">Code</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="category" name="category">
+                    <label for="A3">SQL</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="category" name="category">
+                    <label for="A4">Docker</label>
+                </div> 
+            </div>
+            <div class="difficulty">
+                <div class="answer">
+                    <input type="radio" id="difficulty" name="difficulty">
+                    <label for="A1">Easy</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="difficulty" name="difficulty">
+                    <label for="A2">Medium</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="difficulty" name="difficulty">
+                    <label for="A3">Hard</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="score"></div>
+        
+        <button type="button"> Submit </button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
